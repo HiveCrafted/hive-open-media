@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---------------------
+BOILERPLATE WAS ABOVE
+CULL THAT AS NEEDED
+----------------------
+
+----------------------------------
+The Initial Docker Image Setup Steps were:
+(not saying you should do this now)
+----------------------------------
+gcloud config set run/region us-central1
+docker build -t hive-open-media .
+gcloud auth configure-docker
+docker tag hive-open-media gcr.io/hive-open-media/hive-open-media
+docker push gcr.io/hive-open-media/hive-open-media
+gcloud run deploy --image gcr.io/hive-open-media/hive-open-media --platform managed
+

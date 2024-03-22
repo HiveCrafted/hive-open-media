@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import GoogleSignIn from './GoogleSignIn';
 const logo = require('./logo-1.png');
 
 const App: React.FC = () => {
@@ -11,6 +12,7 @@ const App: React.FC = () => {
           Hive Open Media
         </h1>
       </header>
+      <GoogleSignIn />
     </div>
   );
 }
